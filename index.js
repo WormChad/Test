@@ -1,3 +1,10 @@
+app.use(
+  cors(
+    {
+      origin: "*",
+    }
+  )
+)
 
 var Godot = (() => {
   var _scriptDir = typeof document !== 'undefined' && document.currentScript ? document.currentScript.src : undefined;
